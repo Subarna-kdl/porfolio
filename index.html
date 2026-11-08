@@ -156,21 +156,33 @@
         
     </script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbx3--_b6SdjQkIDThO9tie-Oc3nq3rx4lNeuQJ3P3IUO1L9sASB9BCjUtzke72xiKWZ/exec'
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbykoEvbY4XXSpfzZOs7JCvlYoOKzEs11p3oP0dVsWHw-iWlT8Sg9jQ-2uP3vv8d7pGA/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
       
         form.addEventListener('submit', e => {
           e.preventDefault()
+          const button = form.querySelector('button')
+          button.disabled = true
+          msg.style.color = ""
+          msg.innerHTML = "Sending..."
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
+                if (!response.ok) throw new Error('Server replied ' + response.status)
                 msg.innerHTML = "Message sent sucessfully"
+                form.reset()
+            })
+            .catch(error => {
+                console.error('Error!', error.message)
+                msg.style.color = "#ff004f"
+                msg.innerHTML = "Sorry, your message was not sent. Please try again."
+            })
+            .finally(() => {
+                button.disabled = false
                 setTimeout(function(){
                     msg.innerHTML = ""
                 },5000)
-                form.reset()
             })
-            .catch(error => console.error('Error!', error.message))
         })
       </script>
 
