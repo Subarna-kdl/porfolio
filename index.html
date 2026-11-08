@@ -1,11 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subarna</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subarna Porfolio</title>
+    <link rel="Website icon" type="png" href="images/logo2.png" />
+    <script src="https://kit.fontawesome.com/1220504609.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                </h1>
+                <ul class="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#porfolio">Porfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                 <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Subarna</span> Kandel from Nepal</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+     <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/subarna.png" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+                    <p>Hi! I am Subarna kandel. I live in Nepal. I am an student and a full stack developer. I read in class - 12 at Gorkha Secondary School</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab">
+                        <div class="language">
+                            <h3>HTML <span>90%</span></h3>
+                            <div class="progress"><span></span></div>
+                        </div>
+                        <div class="language2">
+                            <h3>CSS <span>80%</span></h3>
+                            <div class="progress"><span></span></div>
+                        </div>
+                        <div class="language3">
+                            <h3>JavaScript <span>35%</span></h3>
+                            <div class="progress"><span></span></div>
+                        </div>
+                        <div class="language4">
+                            <h3>Python <span></span></h3>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+     </div>
+
+     <!-- Services -->
+      <div class="services">
+        <div class="container">
+            <h1 class="sub-title">
+                My Services
+            </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>We offer web design that create visually appealing, user-friendly websites tailores to your needs. Our servicesinculde strategic design planning graphic design, reponsive development, and ongoinng support for a strong online presence.</p>
+                    <a href="#">Learn More  </a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>We excel in UI/UX design services, transforming digital experiences into seamless journeys. Our expert team specializes in crafting intuitive user interfaces (UI) that captivate users while optimizing user experience (UX) for maximum engagement. We prioritize user-centric design, ensuring your digital products are visually appealing and functionally efficient. Partner with us to elevate your digital presence with cutting-edge UI/UX design that leaves a lasting impression</p>
+                    <a href="#">Learn More</a>
+                </div>
+                     <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>We specialize in app design services that turn your ideas into exceptional mobile experiences. Our dedicated team excels in creating user-friendxly, visually appealing, and highly functional apps. We focus on intuitive user interfaces (UI) and seamless user experiences (UX) to ensure your app stands out in the crowded digital marketplace. Collaborate with us to bring your app vision to life and engage users effectively</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Portfolio -->
+       <div id="porfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/scl.jpg" alt="">
+                    <div class="layer">
+                        <h3>School Website</h3>
+                        <p>I have made an website of gorkha Secondary School situated at Tulsipur-6, Dang</p>
+                        <a href="https.//gssjs.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+
+       <!-- contact -->
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">
+                            Contact Me
+                        </h1>
+                         <p><i class="fas fa-paper-plane"></i>subarnakandel4@gmail.com</p>
+                         <p><i class="fas fa-phone-square-alt"></i> 9847835167</p>
+                        <div class="social-icons">
+                        <a href="https://www.facebook.com/subarna.kandel.986/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/Subarna_kdl0705" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/subarna_kdl12/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Progrmmer-kdl" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright <i class="fa-light fa-copyright"></i> Subarna Kandel. Made by Subarna Kandel</p>
+            </div>
+        </div>
+
+        <!-- taking to top -->
+         <a href="#" class="to-top">
+            <i class="fa fa-chevron-up"></i>
+         </a>
+
+         <!-- script  -->
+          <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-20px";
+            }
+          </script>
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx3--_b6SdjQkIDThO9tie-Oc3nq3rx4lNeuQJ3P3IUO1L9sASB9BCjUtzke72xiKWZ/exec'
+            const form = document.forms['submit-to-sheet']
+            const msg = document.getElementById("msg")
+
+                    form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent sucessfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+          </script>
+          <script>
+            const toTop = document.querySelector(".to-top")
+
+            window.addEventListener("scroll", () => {
+                if(window.pageYOffset > 100){
+                    toTop.classList.add("active");
+                }
+                else {
+                    toTop.classList.remove("acitve");
+                }
+            })
+          </script>
+  </body>
 </html>
