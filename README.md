@@ -6,15 +6,9 @@
 
 **A dark, pink-accented personal portfolio site, built from scratch with plain HTML, CSS and a little JavaScript.**
 
-[Live site](#) · [School website I built](https://gssjs.netlify.app/) · [GitHub](https://https://github.com/Subarna-kdl)
+[Live site](#) · [School website I built](https://gssjs.netlify.app/) · [GitHub](https://github.com/Subarna-kdl)
 
 </div>
-
-<!-- TODO: replace the "#" above with your real deployed link (Netlify / GitHub Pages) -->
-
----
-
-ge_ | _add image_ | _add image_ |
 
 ---
 
