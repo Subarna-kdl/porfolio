@@ -6,7 +6,7 @@
 
 **A dark, pink-accented personal portfolio site, built from scratch with plain HTML, CSS and a little JavaScript.**
 
-[Live site](#) · [School website I built](https://gssjs.netlify.app/) · [GitHub](https://github.com/Subarna-kdl)
+[https://clanky.me/porfolio/]() · [School website I built](https://gssjs.netlify.app/) · [GitHub](https://github.com/Subarna-kdl)
 
 </div>
 
